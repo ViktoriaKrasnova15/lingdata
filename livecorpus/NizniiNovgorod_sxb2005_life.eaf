@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ANNOTATION_DOCUMENT AUTHOR="" DATE="2023-09-27T22:01:48+03:00"
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2023-09-28T10:51:36+03:00"
     FORMAT="3.0" VERSION="3.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
     <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
@@ -49,7 +49,7 @@
         <TIME_SLOT TIME_SLOT_ID="ts37" TIME_VALUE="572522"/>
         <TIME_SLOT TIME_SLOT_ID="ts38" TIME_VALUE="574229"/>
     </TIME_ORDER>
-    <TIER ANNOTATOR="ViktoriaKrasnova" DEFAULT_LOCALE="ru"
+    <TIER ANNOTATOR="viktoriakrasnovahse" DEFAULT_LOCALE="ru"
         LINGUISTIC_TYPE_REF="utterance" PARTICIPANT="@smb2005f" TIER_ID="text@smb2005f">
         <ANNOTATION>
             <ALIGNABLE_ANNOTATION ANNOTATION_ID="a3079"
@@ -166,6 +166,36 @@
             </ALIGNABLE_ANNOTATION>
         </ANNOTATION>
     </TIER>
+    <TIER ANNOTATOR="irinaorlovahse" DEFAULT_LOCALE="ru"
+        LINGUISTIC_TYPE_REF="utterance" PARTICIPANT="@tik1938f" TIER_ID="text@tik1938f"/>
+    <TIER ANNOTATOR="irinaorlovahse" DEFAULT_LOCALE="ru"
+        LINGUISTIC_TYPE_REF="utterance" PARTICIPANT="@aim1984m" TIER_ID="text@aim1984m"/>
+    <TIER ANNOTATOR="irinaorlovahse" DEFAULT_LOCALE="ru"
+        LINGUISTIC_TYPE_REF="pause" PARTICIPANT="@aim1984m" TIER_ID="pause@aim1984m"/>
+    <TIER ANNOTATOR="irinaorlovahse" DEFAULT_LOCALE="en"
+        LINGUISTIC_TYPE_REF="gesture" PARTICIPANT="@tik1938f" TIER_ID="gestDescr@tik1938f"/>
+    <TIER ANNOTATOR="ViktoriaKrasnova" DEFAULT_LOCALE="ru"
+        LINGUISTIC_TYPE_REF="utterance" PARTICIPANT="@vak2006f" TIER_ID="text@vak2006f"/>
+    <TIER ANNOTATOR="KrasnovaViktoria" DEFAULT_LOCALE="ru"
+        LINGUISTIC_TYPE_REF="utterance" PARTICIPANT="@smb2005f" TIER_ID="spokencorpora@smb2005f"/>
+    <TIER ANNOTATOR="irinaorlovahse" DEFAULT_LOCALE="en"
+        LINGUISTIC_TYPE_REF="translation" PARENT_REF="text@aim1984m"
+        PARTICIPANT="@aim1984m" TIER_ID="transl@aim1984m"/>
+    <TIER ANNOTATOR="irinaorlovahse" DEFAULT_LOCALE="en"
+        LINGUISTIC_TYPE_REF="words" PARENT_REF="text@aim1984m"
+        PARTICIPANT="@aim1984m" TIER_ID="token@aim1984m"/>
+    <TIER ANNOTATOR="irinaorlovahse" DEFAULT_LOCALE="en"
+        LINGUISTIC_TYPE_REF="intonation" PARENT_REF="text@aim1984m"
+        PARTICIPANT="@aim1984m" TIER_ID="eduType@aim1984m"/>
+    <TIER ANNOTATOR="irinaorlovahse" DEFAULT_LOCALE="ru"
+        LINGUISTIC_TYPE_REF="gesture_meaning"
+        PARENT_REF="gestDescr@tik1938f" PARTICIPANT="@tik1938f" TIER_ID="gestMeaning@tik1938f"/>
+    <TIER ANNOTATOR="irinaorlova" DEFAULT_LOCALE="en"
+        LINGUISTIC_TYPE_REF="gesture_organs"
+        PARENT_REF="gestDescr@tik1938f" PARTICIPANT="@tik1938f" TIER_ID="gestActiveOrgan@tik1938f"/>
+    <TIER ANNOTATOR="irinaorlovahse" DEFAULT_LOCALE="ru"
+        LINGUISTIC_TYPE_REF="part of speech" PARENT_REF="token@aim1984m"
+        PARTICIPANT="@aim1984m" TIER_ID="pos@aim1984m"/>
     <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
         LINGUISTIC_TYPE_ID="default-lt" TIME_ALIGNABLE="true"/>
     <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
@@ -197,6 +227,7 @@
         CONTROLLED_VOCABULARY_REF="Gesture organs"
         GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="gesture_organs" TIME_ALIGNABLE="false"/>
     <LOCALE COUNTRY_CODE="RU" LANGUAGE_CODE="ru"/>
+    <LOCALE LANGUAGE_CODE="en" VARIANT="ASCII"/>
     <LANGUAGE LANG_DEF="http://cdb.iso.org/lg/CDB-00130975-001"
         LANG_ID="und" LANG_LABEL="undetermined (und)"/>
     <CONSTRAINT
